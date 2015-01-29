@@ -4,6 +4,7 @@ import os
 worlds["aoeminecraft"] = os.environ["WORLDS"]
 outputdir = os.environ["OUTPUTDIR"]
 texturepath = os.environ["TEXTURE"]
+# end of environments
 
 def playerIcons(poi):
 	if poi['id'] == 'Player':
