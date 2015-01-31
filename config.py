@@ -34,11 +34,3 @@ renders['biomeover'] = {
 	"dimension": "overworld",
 }
 
-
-renders['nether'] = {
-    'world': 'aoeminecraft',
-    'rendermode': nether_smooth_lighting,
-    'title': "Nether",
-	"dimension": "nether",
-}
-
