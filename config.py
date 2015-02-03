@@ -43,7 +43,7 @@ renders["normalrendernight"] = {
 
 renders['biomeover'] = {
     'world': 'aoeminecraft',
-    'rendermode': [ClearBase(), BiomeOverlay()],
+    'rendermode': [ClearBase(), BiomeOverlay(biomes=[("Forest", (0, 255, 0)), ("Desert", (255, 0, 0))])],
     'title': "Biomes",
     'overlay': ['normalrenderday'],
 	"dimension": "overworld",
