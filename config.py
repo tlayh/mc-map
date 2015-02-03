@@ -11,12 +11,27 @@ def playerIcons(poi):
 		poi['icon'] = "http://overviewer.org/avatar/%s" % poi['EntityId']
 		return "Last known location for %s" % poi['EntityId']
 
+def townFilter(poi):
+	if poi['id'] == 'Town':
+		return poi['name']
+
 renders["normalrenderday"] = {
 	"world": "aoeminecraft",
 	"title": "Day",
 	"rendermode": smooth_lighting,
 	"dimension": "overworld",
-	"markers": [dict(name="Players", filterFunction=playerIcons, checked=True)]
+	"markers": [dict(name="Players", filterFunction=playerIcons, checked=True),
+				dict(name="Towns", filterFunction=townFilter)]
+	'manualpois':[
+		{
+			'id': 'Town',
+			'x': 397,
+			'y': 70,
+			'z': -478,
+			'name': 'Ghost-Town',
+			'description': 'Sorry, no villagers left here....'
+		}
+	]
 }
 
 renders["normalrendernight"] = {
@@ -33,4 +48,3 @@ renders['biomeover'] = {
     'overlay': ['normalrenderday'],
 	"dimension": "overworld",
 }
-
