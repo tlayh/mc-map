@@ -21,7 +21,7 @@ renders["normalrenderday"] = {
 	"rendermode": smooth_lighting,
 	"dimension": "overworld",
 	"markers": [dict(name="Players", filterFunction=playerIcons, checked=True),
-				dict(name="Towns", filterFunction=townFilter)]
+				dict(name="Towns", filterFunction=townFilter)],
 	'manualpois':[
 		{
 			'id': 'Town',
