@@ -24,7 +24,7 @@ renders["normalrenderday"] = {
 		{
 			'id': 'Town',
 			'x': 397,
-			'y': 70,
+			'y': 64,
 			'z': -478,
 			'name': 'Ghost-Town',
 			'description': 'Sorry, no villagers left here....'
