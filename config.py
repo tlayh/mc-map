@@ -20,8 +20,6 @@ renders["normalrenderday"] = {
 	"title": "Day",
 	"rendermode": smooth_lighting,
 	"dimension": "overworld",
-	"markers": [dict(name="Players", filterFunction=playerIcons, checked=True),
-				dict(name="Towns", filterFunction=townFilter)],
 	'manualpois':[
 		{
 			'id': 'Town',
@@ -31,7 +29,9 @@ renders["normalrenderday"] = {
 			'name': 'Ghost-Town',
 			'description': 'Sorry, no villagers left here....'
 		}
-	]
+	],
+	"markers": [dict(name="Players", filterFunction=playerIcons, checked=True),
+				dict(name="Towns", filterFunction=townFilter, checked=True)],
 }
 
 renders["normalrendernight"] = {
