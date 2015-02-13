@@ -15,25 +15,6 @@ def townFilter(poi):
 	if poi['id'] == 'Town':
 		return poi['name']
 
-renders["normalrenderday"] = {
-	"world": "aoeminecraft",
-	"title": "Day",
-	"rendermode": smooth_lighting,
-	"dimension": "overworld",
-	'manualpois':[
-		{
-			'id': 'Town',
-			'x': 397,
-			'y': 64,
-			'z': -478,
-			'name': 'Ghost-Town',
-			'description': 'Sorry, no villagers left here....'
-		}
-	],
-	"markers": [dict(name="Players", filterFunction=playerIcons, checked=True),
-				dict(name="Towns", filterFunction=townFilter, checked=True)],
-}
-
 renders["normalrendernight"] = {
 	"world": "aoeminecraft",
 	"title": "Night",
@@ -47,4 +28,29 @@ renders['biomeover'] = {
     'title': "Biomes",
     'overlay': ['normalrenderday'],
 	"dimension": "overworld",
+}
+
+renders["normalrenderday"] = {
+	"world": "aoeminecraft",
+	"title": "Day",
+	"rendermode": smooth_lighting,
+	"dimension": "overworld",
+	'manualpois':[
+		{
+			'id': 'Town',
+			'x': 397,
+			'y': 64,
+			'z': -478,
+			'name': 'Ghost-Town',
+		},
+		{
+			'id': 'Town',
+			'x': -157,
+			'y': 20,
+			'z': 356,
+			'name': 'XP-Farm',
+		},
+	],
+	"markers": [dict(name="Players", filterFunction=playerIcons, checked=True),
+				dict(name="Towns", filterFunction=townFilter, checked=True)],
 }
