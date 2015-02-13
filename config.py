@@ -11,24 +11,11 @@ def playerIcons(poi):
 		poi['icon'] = "http://overviewer.org/avatar/%s" % poi['EntityId']
 		return "Last known location for %s" % poi['EntityId']
 
+
 def townFilter(poi):
 	if poi['id'] == 'Town':
 		return poi['name']
 
-renders["normalrendernight"] = {
-	"world": "aoeminecraft",
-	"title": "Night",
-	"rendermode": smooth_night,
-	"dimension": "overworld",
-}
-
-renders['biomeover'] = {
-    'world': 'aoeminecraft',
-    'rendermode': [ClearBase(), BiomeOverlay()],
-    'title': "Biomes",
-    'overlay': ['normalrenderday'],
-	"dimension": "overworld",
-}
 
 renders["normalrenderday"] = {
 	"world": "aoeminecraft",
@@ -53,4 +40,19 @@ renders["normalrenderday"] = {
 	],
 	"markers": [dict(name="Players", filterFunction=playerIcons, checked=True),
 				dict(name="Towns", filterFunction=townFilter, checked=True)],
+}
+
+renders["normalrendernight"] = {
+	"world": "aoeminecraft",
+	"title": "Night",
+	"rendermode": smooth_night,
+	"dimension": "overworld",
+}
+
+renders['biomeover'] = {
+    'world': 'aoeminecraft',
+    'rendermode': [ClearBase(), BiomeOverlay()],
+    'title': "Biomes",
+    'overlay': ['normalrenderday'],
+	"dimension": "overworld",
 }
