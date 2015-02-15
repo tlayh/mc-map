@@ -22,6 +22,45 @@ renders["normalrenderday"] = {
 	"title": "Day",
 	"rendermode": smooth_lighting,
 	"dimension": "overworld",
+	"manualpois":[
+		{
+			'id': 'Town',
+			'x': 397,
+			'y': 64,
+			'z': -478,
+			'name': 'Ghost-Town',
+		},
+		{
+			'id': 'Town',
+			'x': -157,
+			'y': 20,
+			'z': 356,
+			'name': 'XP-Farm',
+		},
+		{
+			'id': 'Town',
+			'x': 2180,
+			'z': 64,
+			'y': 420,
+			'name': 'Yoshi',
+		},
+		{
+			'id': 'Town',
+			'x': 1850,
+			'z': 64,
+			'y': 230,
+			'name': 'Squid',
+		},
+	],
+	"markers": [dict(name="Players", filterFunction=playerIcons, checked=True),
+				dict(name="Places", filterFunction=townFilter, checked=True)],
+}
+
+renders["normalrendernight"] = {
+	"world": "aoeminecraft",
+	"title": "Night",
+	"rendermode": smooth_night,
+	"dimension": "overworld",
 	'manualpois':[
 		{
 			'id': 'Town',
@@ -37,34 +76,23 @@ renders["normalrenderday"] = {
 			'z': 356,
 			'name': 'XP-Farm',
 		},
+		{
+			'id': 'Town',
+			'x': 2180,
+			'z': 64,
+			'y': 420,
+			'name': 'Yoshi',
+		},
+		{
+			'id': 'Town',
+			'x': 1850,
+			'z': 64,
+			'y': 230,
+			'name': 'Squid',
+		},
 	],
 	"markers": [dict(name="Players", filterFunction=playerIcons, checked=True),
-				dict(name="Towns", filterFunction=townFilter, checked=True)],
-}
-
-renders["normalrendernight"] = {
-	"world": "aoeminecraft",
-	"title": "Night",
-	"rendermode": smooth_night,
-	"dimension": "overworld",
-		'manualpois':[
-			{
-				'id': 'Town',
-				'x': 397,
-				'y': 64,
-				'z': -478,
-				'name': 'Ghost-Town',
-			},
-			{
-				'id': 'Town',
-				'x': -157,
-				'y': 20,
-				'z': 356,
-				'name': 'XP-Farm',
-			},
-		],
-		"markers": [dict(name="Players", filterFunction=playerIcons, checked=True),
-					dict(name="Towns", filterFunction=townFilter, checked=True)],
+				dict(name="Places", filterFunction=townFilter, checked=True)],
 }
 
 renders['biomeover'] = {
