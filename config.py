@@ -110,7 +110,7 @@ renders["normalrendernight"] = {
 }
 
 renders['spawnover'] = {
-    'world': 'exmaple',
+    'world': 'aoeminecraft',
     'rendermode': [ClearBase(), SpawnOverlay()],
     'title': "Spawn Overlay",
     'overlay': ['normalrenderday', 'normalrendernight']
