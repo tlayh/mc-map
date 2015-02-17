@@ -109,3 +109,9 @@ renders["normalrendernight"] = {
 				dict(name="Places", filterFunction=townFilter, checked=True)],
 }
 
+renders['spawnover'] = {
+    'world': 'exmaple',
+    'rendermode': [ClearBase(), SpawnOverlay()],
+    'title': "Spawn Overlay",
+    'overlay': ['normalrenderday', 'normalrendernight']
+}
