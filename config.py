@@ -113,5 +113,12 @@ renders['spawnover'] = {
     'world': 'aoeminecraft',
     'rendermode': [ClearBase(), SpawnOverlay()],
     'title': "Spawn Overlay",
-    'overlay': ['normalrenderday', 'normalrendernight']
+    'overlay': ['normalrenderday']
+}
+
+renders['biomeover'] = {
+    'world': 'aoeminecraft',
+    'rendermode': [ClearBase(), BiomeOverlay()],
+    'title': "Biome Overlay",
+    'overlay': ['normalrenderday']
 }
