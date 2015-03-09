@@ -21,104 +21,26 @@ renders["normalrenderday"] = {
 	"world": "aoeminecraft",
 	"title": "Day",
 	"rendermode": smooth_lighting,
-	"dimension": "overworld",
-	"manualpois":[
-		{
-			'id': 'Town',
-			'x': 397,
-			'y': 64,
-			'z': -478,
-			'name': 'Ghost-Town',
-		},
-		{
-			'id': 'Town',
-			'x': -157,
-			'y': 64,
-			'z': 356,
-			'name': 'XP-Farm',
-		},
-		{
-			'id': 'Town',
-			'x': 2183,
-			'z': 64,
-			'y': 407,
-			'name': 'Yoshi',
-		},
-		{
-			'id': 'Town',
-			'x': 1866,
-			'z': 64,
-			'y': 277,
-			'name': 'Squid',
-		},
-		{
-			'id': 'Town',
-			'x': 49,
-			'z': 64,
-			'y': 283,
-			'name': 'Flipper',
-		},
-	],
-	"markers": [dict(name="Players", filterFunction=playerIcons, checked=True),
-				dict(name="Places", filterFunction=townFilter, checked=True)],
+	"markers": [dict(name="Players", filterFunction=playerIcons, checked=True)]
 }
 
 renders["normalrendernight"] = {
 	"world": "aoeminecraft",
 	"title": "Night",
 	"rendermode": smooth_night,
-	"dimension": "overworld",
-	'manualpois':[
-		{
-			'id': 'Town',
-			'x': 397,
-			'y': 64,
-			'z': -478,
-			'name': 'Ghost-Town',
-		},
-		{
-			'id': 'Town',
-			'x': -157,
-			'y': 64,
-			'z': 356,
-			'name': 'XP-Farm',
-		},
-		{
-			'id': 'Town',
-			'x': 2183,
-			'z': 64,
-			'y': 407,
-			'name': 'Yoshi',
-		},
-		{
-			'id': 'Town',
-			'x': 1850,
-			'z': 60,
-			'y': 230,
-			'name': 'Squid',
-		},
-		{
-			'id': 'Town',
-			'x': 49,
-			'z': 64,
-			'y': 283,
-			'name': 'Flipper',
-		},
-	],
-	"markers": [dict(name="Players", filterFunction=playerIcons, checked=True),
-				dict(name="Places", filterFunction=townFilter, checked=True)],
+	"markers": [dict(name="Players", filterFunction=playerIcons, checked=True)]
 }
 
 renders['spawnover'] = {
-    'world': 'aoeminecraft',
-    'rendermode': [ClearBase(), SpawnOverlay()],
-    'title': "Spawn Overlay",
-    'overlay': ['normalrenderday']
+	'world': 'aoeminecraft',
+	'rendermode': [ClearBase(), SpawnOverlay()],
+	'title': "Spawn Overlay",
+	'overlay': ['normalrenderday']
 }
 
 renders['biomeover'] = {
-    'world': 'aoeminecraft',
-    'rendermode': [ClearBase(), BiomeOverlay()],
-    'title': "Biome Overlay",
-    'overlay': ['normalrenderday']
+	'world': 'aoeminecraft',
+	'rendermode': [ClearBase(), BiomeOverlay()],
+	'title': "Biome Overlay",
+	'overlay': ['normalrenderday']
 }
